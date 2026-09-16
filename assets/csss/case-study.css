@@ -1,0 +1,155 @@
+.case-hero {
+    padding:68px 0;
+    background:linear-gradient(120deg,#071e3d,#0c3569);
+    color:white
+}
+
+.case-hero p {
+    max-width:760px;
+    color:#c8d9ef
+}
+
+.case-meta {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin:22px 0
+}
+
+.case-meta span {
+    border:1px solid rgba(255,255,255,.2);
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:.8rem
+}
+
+.case-layout {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 280px;
+    gap:50px
+}
+
+.case-main h2 {
+    margin-top:48px;
+    font-size:1.75rem
+}
+
+.case-main h3 {
+    margin-top:28px
+}
+
+.case-main p,.case-main li {
+    color:#4d6079
+}
+
+.case-main ul {
+    padding-left:20px
+}
+
+.side {
+    position:sticky;
+    top:95px;
+    align-self:start;
+    border:1px solid #dbe6f4;
+    border-radius:16px;
+    padding:20px;
+    background:#f8fbff
+}
+
+.side a {
+    display:block;
+    padding:7px 0;
+    color:#45617f;
+    font-size:.9rem
+}
+
+.side a:hover {
+    color:#1677ff
+}
+
+.kpis {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin:22px 0
+}
+
+.kpi {
+    padding:18px;
+    border-radius:14px;
+    background:#eff6ff;
+    border:1px solid #dceaff
+}
+
+.kpi strong {
+    display:block;
+    font-size:1.35rem;
+    color:#071e3d
+}
+
+.kpi span {
+    font-size:.82rem;
+    color:#667085
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px
+}
+
+.gallery figure {
+    margin:0;
+    border:1px solid #dbe6f4;
+    border-radius:14px;
+    overflow:hidden;
+    background:white
+}
+
+.gallery figcaption {
+    padding:10px 12px;
+    font-size:.82rem;
+    color:#667085
+}
+
+.callout {
+    border-left:4px solid #1677ff;
+    background:#eff6ff;
+    padding:18px 20px;
+    border-radius:0 12px 12px 0
+}
+
+.back {
+    display:inline-block;
+    margin-bottom:20px;
+    color:#bcd5ff
+}
+
+.case-actions {
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:26px
+}
+
+@media(max-width:900px) {
+    .case-layout {
+        grid-template-columns:1fr
+    }
+
+    .side {
+        display:none
+    }
+
+}
+
+@media(max-width:767px) {
+    .kpis,.gallery {
+        grid-template-columns:1fr
+    }
+
+    .case-hero {
+        padding:50px 0
+    }
+
+}
