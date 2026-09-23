@@ -1,0 +1,230 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width,initial-scale=1" name="viewport"/>
+    <meta content="Hnin Wai Khaing &mdash; Data Analyst &amp; Analytics Engineer portfolio featuring business intelligence and analytics case studies." name="description"/>
+    <title>
+    Financial Transaction &amp; Customer Behavior Analytics | Hnin Wai Khaing
+    </title>
+    <link href="../assets/csss/style.css" rel="stylesheet"/>
+    <link href="../assets/csss/responsive.css" rel="stylesheet"/>
+    <link href="../assets/csss/case-study.css" rel="stylesheet"/>
+    </head>
+    <body>
+    <header>
+    <div class="container nav">
+        <a class="brand" href="../index.html">
+        Hnin Wai Khaing
+        </a>
+        <button aria-label="Open menu" class="menu-btn">
+        ☰
+        </button>
+        <nav class="navlinks">
+        <a href="../index.html">
+        Home
+        </a>
+        <a href="../index.html#about">
+        About
+        </a>
+        <a href="../projects.html">
+        Projects
+        </a>
+    
+        </nav>
+    </div>
+    </header>
+    <main>
+    <section class="case-hero">
+        <div class="container">
+        <a class="back" href="../projects.html">
+        &larr; Back to Projects
+        </a>
+        <div class="eyebrow">
+        Case Study
+        </div>
+        <h2 class="section-title">
+        Financial Transaction &amp; Customer Behavior Analytics
+        </h2>
+        
+        <p>
+            Developed an end-to-end Python analytics project using 13.3M financial transactions worth $571.84M to evaluate transaction performance, spending patterns, merchant activity, customer behavior, transaction methods, geographic patterns, card usage, and transaction errors. The project transforms large-scale transactional data into business-focused insights while carefully accounting for data limitations.
+        </p>
+        <div class="case-meta">
+        <span>
+        Financial Services &amp; Customer Analytics
+        </span>
+        <span>
+        Python &middot; Pandas &middot; NumPy &middot; Matplotlib
+        </span>
+        
+        </div>
+        <div class="case-actions">
+        <a class="btn primary" href="https://github.com/hninwaikhaing-data/financial-transaction-customer-behavior-analytics" target="_blank">
+        View GitHub
+        </a>
+    
+        </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container case-layout">
+        <article class="case-main">
+        <h2 id="overview">
+        Project Overview
+        </h2>
+        <p>
+            This project is an end-to-end Financial Transaction &amp; Customer Behavior Analytics solution developed in Python.
+            <br>
+            The analysis covers 13,305,915 financial transactions recorded from January 1, 2010 through October 31, 2019, representing approximately $571.84 million in transaction value across 1,219 active customers and 4,071 active cards.
+            <br>
+            The project combines transaction, customer, card, merchant-category, and limited fraud-label data to evaluate transaction performance and understand customer financial behavior. The goal is to transform large-scale transactional data into clear, business-oriented insights while communicating important analytical limitations.
+        </p>
+        
+        <h2 id="problem">
+        Business Problem
+        </h2>
+        <p>
+            Financial transaction data spans multiple dimensions, including customers, cards, merchants, transaction methods, categories, locations, amounts, and transaction outcomes.
+            <br>
+            Without a consolidated analytical view, it is difficult to understand overall transaction performance, identify meaningful customer behavior patterns, compare transaction channels, evaluate merchant activity, and detect areas requiring operational attention.
+        </p>
+        <h2 id="objectives">
+        Project Objectives
+        </h2>
+        <p>
+            The objective of this project is to develop a structured Python-based analysis that helps understand:
+        </p>
+        <ul>
+        <li>Overall transaction value, volume, and average transaction size.</li>
+        <li>Transaction trends and spending patterns over time.</li>
+        <li>Swipe, chip, and online transaction behavior.</li>
+        <li>Merchant-category performance by transaction volume and value.</li>
+        <li>Geographic transaction patterns.</li>
+        <li>Transaction errors by error type and transaction method.</li>
+        <li>Customer spending, activity, financial characteristics, and card usage behavior.</li>
+        </ul>
+        <h2 id="questions">
+        Business Questions
+        </h2>
+        <ul>
+        <li>What is the overall transaction performance across the dataset?</li>
+        <li>How do transaction volume, value, and average transaction size change over time?</li>
+        <li>How do transaction amounts and transaction methods differ?</li>
+        <li>Which merchant categories contribute the most transaction volume and value?</li>
+        <li>Where is transaction activity geographically concentrated?</li>
+        <li>What transaction errors occur most frequently, and how do error rates differ by transaction method?</li>
+        <li>How active are customers, and how does customer spending vary?</li>
+        <li>How concentrated is transaction value across customers?</li>
+        <li>How do customer transaction methods, merchant preferences, financial characteristics, and card usage differ?</li>
+        </ul>
+        <h2 id="approach">
+        Analytical Approach
+        </h2>
+        <div class="callout">
+        Extracted, cleaned, transformed, and merged large-scale transaction, customer, card, and merchant-category data in Python, then performed exploratory analysis, visualization, customer-level aggregation, and business-focused interpretation.
+        </div>
+        <h2 id="dashboard">
+        Analysis Highlights
+        </h2>
+        <p>
+            The analysis is organized around financial transaction performance and customer behavior. Key measures include total transaction value, transaction count, average transaction value, active customers, active cards, transaction-method mix, merchant-category activity, geographic patterns, transaction errors, customer spending, and card usage.
+            <br>
+            The dataset contains 13,305,915 transactions with approximately $571.84M in total transaction value and an average transaction value of $42.98.
+        </p>
+        
+        <h2 id="insights">
+        Key Insights
+        </h2>
+        <p>
+            Swipe was the dominant transaction method by volume, accounting for 52.36% of transactions, followed by chip at 35.93% and online at 11.71%. Online transactions, however, recorded the highest average transaction value at $57.26, compared with $41.21 for swipe and $40.89 for chip.
+            <br>
+            Merchant-category analysis showed that transaction volume and transaction value tell different stories. Grocery Stores and Supermarkets generated the highest transaction frequency, while Money Transfer generated approximately $53.2M in transaction value and ranked first by value.
+            <br>
+            Among identified states, California recorded the highest transaction value at approximately $59.08M, followed by Texas at $42.48M and New York at $39.72M. Online and unknown-location activity was treated separately from physical geography to avoid misleading geographic conclusions.
+            <br>
+            Approximately 98.41% of transactions had no recorded error, while 211,393 transactions, or 1.59%, contained an error. Insufficient Balance was the most common recorded error. Online transactions had the highest observed method-level error rate at 2.28%, compared with 1.51% for chip and 1.49% for swipe.
+            <br>
+            Across 1,219 active customers, average cumulative spending was approximately $469,102 while median cumulative spending was approximately $398,837, indicating that higher-spending customers raise the overall average. Customers averaged approximately 10,915 transactions across the full multi-year observation period.
+            <br>
+            Card usage was led by Mastercard with 53.79% of transaction volume, followed by Visa with 37.26%. These raw transaction counts reflect observed card activity and should not be interpreted as direct evidence of customer brand preference.
+        </p>
+        
+        
+        <h2 id="value">
+        Business Impact
+        </h2>
+        <p>
+            The analysis provides a consolidated view of transaction performance and customer behavior across transaction channels, merchant categories, geography, customer activity, and card usage. It demonstrates that transaction volume and monetary value should be evaluated together, because high-frequency categories and channels do not always generate the highest transaction value.
+            <br>
+            The customer-level analysis also highlights differences in spending and activity that can support behavioral segmentation, while transaction-error analysis provides a basis for identifying channels and error types that may require closer operational monitoring.
+        </p>
+
+    
+            
+    </article>
+        <aside class="side">
+        <strong>
+        Case Study
+        </strong>
+        <a href="#overview">
+        Overview
+        </a>
+        <a href="#problem">
+        Business Problem
+        </a>
+        <a href="#objectives">
+        Objectives
+        </a>
+        <a href="#questions">
+        Business Questions
+        </a>
+        <a href="#approach">
+        Approach
+        </a>
+        <a href="#dashboard">
+        Analysis Highlights
+        </a>
+        <a href="#insights">
+        Insights
+        </a>
+        
+        <a href="#value">
+        Business Impact
+        </a>
+        
+        </aside>
+        </div>
+    </section>
+    </main>
+    <footer>
+    <div class="container footer-row">
+        <div>
+        <strong>
+        Hnin Wai Khaing
+        </strong>
+        &middot; Data Analyst &amp; Analytics Engineer
+        </div>
+        <div>
+        <a href="https://www.linkedin.com/in/hninwaikhaing" target="_blank">
+        LinkedIn
+        </a>
+        &middot;
+        <a href="https://github.com/hninwaikhaing-data" target="_blank">
+        GitHub
+        </a>
+        &middot;
+        <a href="mailto:hninwaikhaingmk98@gmail.com">
+        Email
+        </a>
+        </div>
+        <div>
+        &copy; 2026 Hnin Wai Khaing
+        </div>
+    </div>
+    </footer>
+    <script src="../assets/jss/main.js">
+    </script>
+    </body>
+    </html>
+
