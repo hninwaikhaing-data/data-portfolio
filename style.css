@@ -37,24 +37,16 @@
     font-weight: 1500;
     font-style: normal;
     text-transform: none;
-    max-width: 870px;
+    
     width: 100%;
     text-align: justify;
 }
-.projects-container{
-    width:96%;
-    max-width:1800px;
-    margin:0 auto;
+.projects-container {
+    width: 99%;
+    max-width: 1750px;
+    margin: 0 auto;
 }
-/* Grid layout */
-.project-grid {
-    display:grid;
-    grid-template-columns:repeat(2,minmax(500px,1fr));
-    gap:40px;
 
-    max-width:1400px;
-    margin:0 auto 70px;
-}
 
 /* Individual project card */
 .card{
@@ -68,10 +60,347 @@
     transition:transform .2s,box-shadow .2s
 
 }
+/* =========================
+PROJECT PAGE
+========================= */
+
+.projects-page {
+    width: 95%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+/* =========================
+PROJECT GRID
+========================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0 auto 70px;
+}
+
+
+/* =========================
+PROJECT CARD
+========================= */
+
+.project-grid .card {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Desktop */
+.project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 #projects .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+/* Update Skill section */
+/* =====================================================
+COMPACT SKILLS SECTION
+===================================================== */
+
+#skills.portfolio-skills {
+    width: 100%;
+    padding: 55px 30px 60px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* ---------- Heading ---------- */
+
+#skills .skills-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#skills .skills-top-line {
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    margin: 0 auto 12px;
+
+    background: #2797a4;
+    border-radius: 10px;
+}
+
+#skills .skills-heading h2 {
+    margin: 0;
+
+    font-size: 34px;
+    line-height: 1;
+
+    font-weight: 800;
+    letter-spacing: 4px;
+
+    color: #101b3c;
+}
+
+#skills .skills-heading p {
+    margin: 12px 0 0;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    color: #687a94;
+}
+
+
+/* =====================================================
+GRID
+===================================================== */
+
+#skills .skills-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    column-gap: 45px;
+    row-gap: 35px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+EACH SKILL
+===================================================== */
+
+#skills .skill-item {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+}
+
+
+/* ---------- Circle ---------- */
+
+#skills .skill-icon {
+    width: 82px;
+    height: 82px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border-radius: 50%;
+
+    background: #f1f7f9;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* ---------- Icon ---------- */
+
+#skills .skill-icon i {
+    font-size: 35px;
+    color: #2996a2;
+}
+
+
+/* Two icons for Git + GitHub */
+
+#skills .skill-icon.dual-icon i {
+    font-size: 28px;
+}
+
+
+/* ---------- Hover ---------- */
+
+#skills .skill-item:hover .skill-icon {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(15, 35, 55, 0.10);
+}
+
+
+/* =====================================================
+CONNECTOR
+===================================================== */
+
+#skills .skill-connector {
+    width: 0;
+    height: 17px;
+
+    margin: 4px auto 5px;
+
+    border-left:
+        2px dashed #2996a2;
+}
+
+
+/* =====================================================
+SKILL NAME
+===================================================== */
+
+#skills .skill-item h3 {
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.25;
+
+    font-weight: 750;
+
+    color: #101b3c;
+}
+
+
+/* =====================================================
+SMALL SUB LABEL
+===================================================== */
+
+#skills .skill-detail {
+    display: inline-block;
+
+    margin-top: 7px;
+    padding: 5px 12px;
+
+    background: #edf5f8;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    line-height: 1;
+
+    color: #596b82;
+}
+
+
+/* =====================================================
+TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    #skills .skills-grid {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr)) !important;
+
+        column-gap: 30px;
+        row-gap: 35px;
+    }
+
+}
+
+
+/* =====================================================
+MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    #skills.portfolio-skills {
+        padding:
+            45px 18px 50px;
+    }
+
+    #skills .skills-heading {
+        margin-bottom: 30px;
+    }
+
+    #skills .skills-heading h2 {
+        font-size: 29px;
+    }
+
+    #skills .skills-heading p {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    #skills .skills-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+
+    #skills .skill-icon {
+        width: 72px;
+        height: 72px;
+    }
+
+    #skills .skill-icon i {
+        font-size: 30px;
+    }
+
+    #skills .skill-icon.dual-icon i {
+        font-size: 24px;
+    }
+
+    #skills .skill-item h3 {
+        font-size: 13px;
+    }
+
+    #skills .skill-detail {
+        font-size: 10px;
+    }
+
 }
 
 /* Image */
@@ -180,11 +509,29 @@
     margin: 0 auto;
     padding: 40px 0;
 }
+
+
+
+/* Tablet: 2 projects */
+@media (max-width: 1100px) {
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+/* Mobile: 1 project */
+@media (max-width: 700px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+}
 /* === Responsive tweaks === */
 
 
 
-/* Mobile */
+/* Mobile 
 @media (max-width: 992px) {
         #projects h2 {
             font-size: 1.6rem;
@@ -198,7 +545,7 @@
         }
         
 }
-
+*/
 /* === Hybrid Hero (Massively + Round Photo) === */
 .hero-merge{
     position:relative;
@@ -238,7 +585,7 @@
 }
 
 .icons{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 }
 
 /* photo (perfect circle) */
