@@ -749,8 +749,8 @@ HOME HERO — MOBILE FINAL
         IMPORTANT:
         Do NOT justify mobile text.
         */
+        
         text-align: justify !important;
-
         letter-spacing: 0 !important;
     }
 
@@ -843,6 +843,44 @@ HOME HERO — MOBILE FINAL
 
 }
 
+@media screen and (max-width: 768px) {
+
+    /* =========================
+    NAME
+    ========================= */
+    #intro h1 {
+        font-size: 1.75rem !important;
+        line-height: 1.15 !important;
+        letter-spacing: 1.5px !important;
+        margin-bottom: 10px !important;
+    }
+
+
+    /* =========================
+    JOB TITLE
+    ========================= */
+    #intro h1 + p {
+        font-size: 0.90rem !important;
+        line-height: 1.5 !important;
+        margin-top: 8px !important;
+    }
+
+
+    /* =========================
+    ABOUT PARAGRAPH
+    ========================= */
+    #intro p.hero-merge_blurb {
+        font-size: 0.88rem !important;
+        line-height: 1.65 !important;
+
+        text-align: left !important;
+        letter-spacing: 0 !important;
+
+        margin-top: 15px !important;
+        margin-bottom: 22px !important;
+    }
+
+}
 .skills-list {
     list-style: disc;
 
