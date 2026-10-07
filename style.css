@@ -621,38 +621,117 @@ MOBILE
 
 /* mobile */
 @media screen and (max-width: 768px) {
-    .hero-merge_inner {
-        display: flex;
-        flex-direction: column;
+     /* Keep photo + content side by side */
+    #intro .hero-merge_inner {
+        display: grid;
+        grid-template-columns: 110px minmax(0, 1fr);
+
         align-items: center;
-        text-align: center;
-        padding: 80px 24px;
-        gap: 28px;
-    }
 
-    .hero-merge_photo {
-        width: 200px;
-        height: 270px;
-        margin: 0 auto;
-    }
+        gap: 18px;
 
-    .hero-merge_inner h2 {
-        font-size: 1.8rem;
-        letter-spacing: 2px;
-    }
+        width: 100%;
+        max-width: 100%;
 
-    .hero-merge_inner p {
-        font-size: 0.95rem;
-        line-height: 1.7;
+        padding: 35px 20px;
+
         text-align: left;
     }
 
-    .actions.special {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+
+    /* Profile photo */
+    #intro .profile-image {
+        width: 110px;
+        max-width: 110px;
+        margin: 0;
     }
 
+    #intro .profile-image img {
+        width: 100%;
+        height: auto;
+
+        display: block;
+
+        border-radius: 12px;
+
+        box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+
+    /* Name */
+    #intro .hero-merge_inner h1 {
+        font-size: 24px !important;
+        line-height: 1.15 !important;
+        letter-spacing: 1.5px !important;
+
+        margin: 0 0 8px !important;
+    }
+
+
+    /* Normal hero text */
+    #intro .hero-merge_inner p {
+        font-size: 11px;
+        line-height: 1.5;
+
+        margin: 6px 0;
+
+        text-align: left;
+    }
+
+
+    /* About paragraph */
+    #intro p.hero-merge_blurb {
+        font-size: 10px;
+        line-height: 1.55;
+
+        margin: 10px 0;
+
+        text-align: left;
+    }
+
+
+    /* Contact links */
+    #intro .actions.special {
+        display: flex;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 6px 12px;
+
+        margin: 12px 0;
+    }
+
+    #intro .actions.special li {
+        width: auto;
+        padding: 0;
+    }
+
+    #intro .actions.special a {
+        font-size: 9px;
+    }
+
+
+    /* Buttons */
+    #intro .button.primary {
+        font-size: 9px;
+
+        height: 34px;
+        line-height: 34px;
+
+        padding: 0 12px;
+
+        margin: 3px;
+    }
+
+
+    /* Hide the large continue arrow on mobile */
+    #intro .hero-merge_inner > .actions {
+        display: none;
+    }
 }
 
 .skills-list {
