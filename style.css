@@ -698,7 +698,7 @@ HOME HERO — MOBILE FINAL
         grid-row: 1;
         align-self: start;
         margin: 15px 0 0 !important;
-        font-size: 1.15rem !important;
+        font-size: 1.18rem !important;
         line-height: 1.15 !important;
         letter-spacing: 1.5px !important;
         text-align: left;
@@ -712,7 +712,7 @@ HOME HERO — MOBILE FINAL
     #intro h1 + p {
         grid-column: 2;
         grid-row: 1;
-        align-self: center;
+        align-self: start;
         margin: 12px 0 0 !important;
         font-size: 11px !important;
         line-height: 1.5 !important;
