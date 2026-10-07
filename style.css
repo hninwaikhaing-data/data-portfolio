@@ -694,10 +694,20 @@ HOME HERO — MOBILE FINAL
     ============================== */
 
     #intro h1 {
-        font-size: 1rem !important;
+    
+        grid-row: 1;
+
+        align-self: start;
+
+        margin: 5px 0 0 !important;
+
+        font-size: 1.55rem !important;
+        white-space: nowrap;
         line-height: 1.15 !important;
+
         letter-spacing: 1.5px !important;
-        margin-bottom: 10px !important;
+
+        text-align: left;
     }
 
 
