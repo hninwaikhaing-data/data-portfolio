@@ -694,7 +694,7 @@ HOME HERO — MOBILE FINAL
     ============================== */
 
     #intro h1 {
-        font-size: 1.75rem !important;
+        font-size: 1rem !important;
         line-height: 1.15 !important;
         letter-spacing: 1.5px !important;
         margin-bottom: 10px !important;
@@ -706,9 +706,17 @@ HOME HERO — MOBILE FINAL
     */
 
     #intro h1 + p {
-        font-size: 0.90rem !important;
+        grid-column: 2;
+        grid-row: 1;
+
+        align-self: center;
+
+        margin: 55px 0 0 !important;
+
+        font-size: 11px !important;
         line-height: 1.5 !important;
-        margin-top: 8px !important;
+
+        text-align: left !important;
     }
 
 
