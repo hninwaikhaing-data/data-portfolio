@@ -749,7 +749,7 @@ HOME HERO — MOBILE FINAL
         IMPORTANT:
         Do NOT justify mobile text.
         */
-        text-align: left !important;
+        text-align: justify !important;
 
         letter-spacing: 0 !important;
     }
